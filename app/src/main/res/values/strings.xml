@@ -8,4 +8,5 @@
     <string name="tab_menu_profile">订单</string>
     <string name="tab_menu_pay">发现</string>
     <string name="tab_menu_setting">我的</string>
+    <string name="title_activity_shop_detail">ShopDetailActivity</string>
 </resources>

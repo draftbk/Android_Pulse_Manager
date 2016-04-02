@@ -45,6 +45,8 @@ public class MyFragment1 extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id1) {
                 Log.d("test","adadada");
+                Intent intent=new Intent(context,ShopDetailActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -53,7 +55,7 @@ public class MyFragment1 extends Fragment {
 
     private void initList() {
         for (int i=0;i<=5;i++){
-            Shop shop=new Shop("平嘉大药房","1.2千米",R.drawable.shop1,R.drawable.stars);
+            Shop shop=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
             shopList.add(shop);
         }
 

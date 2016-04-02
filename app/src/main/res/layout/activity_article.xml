@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.slf.pulse_manager.ArticleActivity">
+    <TextView
+        android:text="文章"
+        android:textSize="@dimen/title_size"
+        android:textColor="@color/bg_white"
+        android:gravity="center"
+        android:background="@color/first_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height" />
+
+    <TextView
+        android:text="2016.4.3  某某某  "
+        android:layout_marginLeft="10dp"
+        android:gravity="center|left"
+        android:textColor="#D3D3D3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="喝水的养生学问"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="    水是生命之源，我们每个人每天都会喝水，喝水能够排除体内的毒素，还能够预防很多疾病的发生，但是你真的知道怎样才算是健康喝水么？
+    其实喝水的学问是非常大的，在“世界水日”的今天小编和大家一起学习下吧。
+饮水不足的危害：
+    缺水时，除感到口渴外，还会出现皮肤干燥、唇裂、无力、尿少、头晕、头痛等现象，严重时还会出现发热、烦躁不安等精神症状。水分不足会导致胃肠消化、血液输送营养、体液浓度调节等的功能失常，还会引发腰酸背痛及变形性膝关节症、关节炎等疾病。
+饮水过量的危害：
+    过量饮用水会导致人体盐分过度流失，开始会出现头昏眼花、虚弱无力、心跳加快等症状，严重时甚至会出现痉挛、意识障碍和昏迷，即水中毒。但体内水过多或水中毒的情况正常人极少出现，一般多见于肝、肾、心功能异常的人。
+如何判断缺水
+    如果你不知道喝水多了还是少了，这里有个小窍门，可以根据自己尿液的颜色来判断。一般来说，人的尿液为淡黄色，如果颜色太浅，则可能是水喝得过多，如果颜色偏深，则表示需要多补充一些水了。
+
+"
+        android:layout_marginLeft="15dp"
+        android:textSize="16dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
