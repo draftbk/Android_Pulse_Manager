@@ -7,7 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_shop_detail"
     android:background="#f0f0f0"
-    tools:context="com.example.slf.pulse_manager.ShopDetailActivity">
+    tools:context="com.example.slf.pulse_manager.activity.ShopDetailActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"

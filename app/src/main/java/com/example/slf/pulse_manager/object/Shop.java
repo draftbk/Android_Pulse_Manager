@@ -1,4 +1,4 @@
-package com.example.slf.pulse_manager;
+package com.example.slf.pulse_manager.object;
 
 import android.app.Activity;
 

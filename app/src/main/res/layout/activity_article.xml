@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.slf.pulse_manager.ArticleActivity">
+    tools:context="com.example.slf.pulse_manager.activity.ArticleActivity">
     <TextView
         android:text="文章"
         android:textSize="@dimen/title_size"

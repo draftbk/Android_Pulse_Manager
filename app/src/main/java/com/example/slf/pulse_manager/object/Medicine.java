@@ -1,4 +1,4 @@
-package com.example.slf.pulse_manager;
+package com.example.slf.pulse_manager.object;
 
 /**
  * Created by slf on 16/4/2.

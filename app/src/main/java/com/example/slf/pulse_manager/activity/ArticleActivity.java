@@ -1,7 +1,9 @@
-package com.example.slf.pulse_manager;
+package com.example.slf.pulse_manager.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.slf.pulse_manager.R;
 
 public class ArticleActivity extends AppCompatActivity {
 

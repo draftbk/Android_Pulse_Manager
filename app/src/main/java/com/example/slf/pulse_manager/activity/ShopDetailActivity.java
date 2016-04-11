@@ -1,6 +1,5 @@
-package com.example.slf.pulse_manager;
+package com.example.slf.pulse_manager.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,11 +10,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.Toast;
 
+import com.example.slf.pulse_manager.object.Medicine;
+import com.example.slf.pulse_manager.adapter.MedicineListAdapter;
+import com.example.slf.pulse_manager.R;
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class ShopDetailActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -50,13 +51,13 @@ public class ShopDetailActivity extends AppCompatActivity implements View.OnClic
         for (int i=0;i<1;i++){
             Medicine medicine=new Medicine("金嗓子喉片","适用于改善急性咽炎所致的咽喉肿痛，干燥灼热，声音嘶哑",R.drawable.medicine1,R.drawable.stars,"6.5");
             medicineList.add(medicine);
-            Medicine medicine2=new Medicine("健胃消食片","适用于脾胃虚弱所致的食积，症见不思饮食，嗳腐酸臭，脘腹胀满；消化不良的人群",R.drawable.medicine2,R.drawable.stars,"7.5");
+            Medicine medicine2=new Medicine("健胃消食片","适用于脾胃虚弱所致的食积，症见不思饮食，嗳腐酸臭，脘腹胀满；消化不良的人群",R.drawable.medicine2,R.drawable.stars2,"7.5");
             medicineList.add(medicine2);
             Medicine medicine3=new Medicine("999感冒灵颗粒","本品解热镇痛。用于感冒引起的头痛，发热等",R.drawable.medicine3,R.drawable.stars,"9.9");
             medicineList.add(medicine3);
-            Medicine medicine4=new Medicine("复方氨酚烷胺胶囊","用于缓解普通感冒及流行性感冒引起的发热、头痛、鼻塞、咽痛等症状，也可用于流行性感冒的预防和治疗。",R.drawable.medicine4,R.drawable.stars,"14.8");
+            Medicine medicine4=new Medicine("复方氨酚烷胺胶囊","用于缓解普通感冒及流行性感冒引起的发热、头痛、鼻塞、咽痛等症状，也可用于流行性感冒的预防和治疗。",R.drawable.medicine4,R.drawable.stars2,"14.8");
             medicineList.add(medicine4);
-            Medicine medicine5=new Medicine("久铭银黄胶囊","清热解毒。用于急慢性扁桃体炎，急慢性咽喉炎，上呼吸道感染。",R.drawable.medicine5,R.drawable.stars,"10.0");
+            Medicine medicine5=new Medicine("久铭银黄胶囊","清热解毒。用于急慢性扁桃体炎，急慢性咽喉炎，上呼吸道感染。",R.drawable.medicine5,R.drawable.stars2,"10.0");
             medicineList.add(medicine5);
         }
 
