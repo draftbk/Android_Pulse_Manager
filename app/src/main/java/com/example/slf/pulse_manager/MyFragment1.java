@@ -54,9 +54,19 @@ public class MyFragment1 extends Fragment {
     }
 
     private void initList() {
-        for (int i=0;i<=5;i++){
+        for (int i=0;i<=2;i++){
             Shop shop=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
             shopList.add(shop);
+            Shop shop2=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
+            shopList.add(shop2);
+            Shop shop3=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
+            shopList.add(shop3);
+            Shop shop4=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
+            shopList.add(shop4);
+            Shop shop5=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
+            shopList.add(shop5);
+            Shop shop6=new Shop("平嘉大药房","1.2千米",R.drawable.shop2,R.drawable.stars);
+            shopList.add(shop6);
         }
 
     }

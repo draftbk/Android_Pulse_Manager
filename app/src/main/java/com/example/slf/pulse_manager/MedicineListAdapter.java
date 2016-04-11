@@ -38,9 +38,8 @@ public class MedicineListAdapter extends ArrayAdapter<Medicine> {
         viewHolder.medicine.setImageResource(medicine.getImage_shop());
         viewHolder.star.setImageResource(medicine.getImage_star());
         viewHolder.name.setText(medicine.getName());
-        viewHolder.price.setText(medicine.getPrice());
+        viewHolder.price.setText("¥ "+medicine.getPrice());
         viewHolder.description.setText(medicine.getDescription());
-
         return view;
     }
 

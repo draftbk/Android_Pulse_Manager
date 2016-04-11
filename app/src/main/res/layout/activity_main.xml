@@ -31,7 +31,7 @@
         <RadioButton
             android:id="@+id/rb_channel"
             style="@style/tab_menu_item"
-            android:drawableTop="@drawable/tab_menu_channel"
+            android:drawableTop="@drawable/tab_menu_message"
             android:text="@string/tab_menu_alert" />
 
         <RadioButton
