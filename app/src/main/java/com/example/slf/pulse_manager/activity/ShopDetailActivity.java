@@ -1,11 +1,14 @@
 package com.example.slf.pulse_manager.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -55,9 +58,9 @@ public class ShopDetailActivity extends AppCompatActivity implements View.OnClic
             medicineList.add(medicine2);
             Medicine medicine3=new Medicine("999感冒灵颗粒","本品解热镇痛。用于感冒引起的头痛，发热等",R.drawable.medicine3,R.drawable.stars,"9.9");
             medicineList.add(medicine3);
-            Medicine medicine4=new Medicine("复方氨酚烷胺胶囊","用于缓解普通感冒及流行性感冒引起的发热、头痛、鼻塞、咽痛等症状，也可用于流行性感冒的预防和治疗。",R.drawable.medicine4,R.drawable.stars2,"14.8");
+            Medicine medicine4=new Medicine("复方氨酚烷胺胶囊","用于缓解普通感冒及流行性感冒引起的发热、头痛、鼻塞、咽痛等症状，也可用于流行性感冒的预防和治疗。",R.drawable.medicine4,R.drawable.stars2,"9.8");
             medicineList.add(medicine4);
-            Medicine medicine5=new Medicine("久铭银黄胶囊","清热解毒。用于急慢性扁桃体炎，急慢性咽喉炎，上呼吸道感染。",R.drawable.medicine5,R.drawable.stars2,"10.0");
+            Medicine medicine5=new Medicine("久铭银黄胶囊","清热解毒。用于急慢性扁桃体炎，急慢性咽喉炎，上呼吸道感染。",R.drawable.medicine5,R.drawable.stars2,"5.5");
             medicineList.add(medicine5);
         }
 
@@ -97,5 +100,27 @@ public class ShopDetailActivity extends AppCompatActivity implements View.OnClic
                 break;
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.search_book) {
+            Intent intent =new Intent(ShopDetailActivity.this,ConsultationActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+
+        return super.onOptionsItemSelected(item);
     }
 }

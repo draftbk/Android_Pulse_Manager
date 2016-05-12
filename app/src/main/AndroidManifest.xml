@@ -26,6 +26,12 @@
         </activity>
         <activity android:name=".activity.TreatmentRecordActivity" >
         </activity>
+        <activity
+            android:name=".activity.ConsultationActivity"
+            android:label="@string/title_activity_consultation"
+            android:theme="@style/AppTheme" >
+
+        </activity>
     </application>
 
 </manifest>

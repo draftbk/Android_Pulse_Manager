@@ -1,0 +1,70 @@
+<com.example.slf.pulse_manager.widgets.SizeNotifierRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_layout"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.slf.pulse_manager.activity.ConsultationActivity">
+
+
+    <ListView
+        android:id="@+id/chat_list_view"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:divider="@drawable/chat_divider"
+        android:layout_width="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_above="@+id/bottomlayout"
+        android:layout_height="match_parent"></ListView>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_weight="10">
+
+            <ImageView android:src="@drawable/ic_msg_panel_smiles" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_weight="1"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:id="@+id/chat_edit_text1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:scrollHorizontally="false"
+                android:hint="输入你要说的话"
+                android:maxLines="4"
+                android:singleLine="false"
+                android:inputType="textCapSentences"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:id="@+id/enter_chat1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_chat_send" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</com.example.slf.pulse_manager.widgets.SizeNotifierRelativeLayout>
